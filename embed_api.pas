@@ -22,7 +22,7 @@ type
     function Zip(Valor: string): string;
     function Rar(Valor: string): string;
     function GetStatus: string;
-    function Finalizar(Valor: string): string;
+    function Finalizar: string;
   end;
 
 implementation
@@ -111,11 +111,9 @@ begin
   Result := lib.ObterValor(Output, STATUS_CODE);
 end;
 
-function TEmbedApi.Finalizar(Valor: string): string;
+function TEmbedApi.Finalizar: string;
 begin
-  var Operacao := 'confirmar';
-  var Input := Operacao + ';'
-            + Valor;
+  var Input := '';
   var Output := lib.Finalizar(Input);
   Result := lib.ObterValor(Output, STATUS_CODE);
 end;

@@ -61,7 +61,7 @@ begin
       else
         ShowStatus('[XML] Processando');
     end;
-    Output := api.Finalizar('');
+    Output := api.Finalizar;
     if Output = '0' then
       ShowStatus('[XML] Finalizado')
     else
@@ -92,7 +92,7 @@ begin
         else
           ShowStatus('[XML] Processando');
       end;
-      Output := api.Finalizar('');
+      Output := api.Finalizar;
       if Output = '0' then
         ShowStatus('[XML] Finalizado')
       else
@@ -126,7 +126,7 @@ begin
         else
           ShowStatus('[XML] Processando');
       end;
-      Output := api.Finalizar('');
+      Output := api.Finalizar;
       if Output = '0' then
         ShowStatus('[XML] Finalizado')
       else
@@ -160,7 +160,7 @@ begin
         else
           ShowStatus('[XML] Processando');
       end;
-      Output := api.Finalizar('');
+      Output := api.Finalizar;
       if Output = '0' then
         ShowStatus('[XML] Finalizado')
       else
